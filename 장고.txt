@@ -1,0 +1,45 @@
+c드라이브에 venvs 만들고 명령프롬프트에서 진입
+mkdir mysite	->	폴더 생성
+cd mysite
+python -m venv .
+cd Scripts
+activate	->	가상화 진입
+pip install django	->장고 설치
+python -m pip install --upgrade pip	-> 작업환경 업그레이드
+activate bat	->	가상화 탈출
+
+c드라이브에 web_project 생성
+가상화 진입해서 
+
+cd c:/web_project 진입
+mkdir polls
+cd c:/web_project/polls
+django-admin
+django-admin startproject config .
+python manage.py runserver
+
+파이참에서 polls 오픈
+setting에 맨 아래 LANGUAGE = ko-kr / TIME = Asia/Seoul로 변경
+가상화에서 ctrl+c하고 python manage.py runserver
+
+파이참->file->setting->project:polls->python interpreter->상단에 톱니에 add 클릭->하단에 existing environment 체크->...클릭->C:\venvs2\mysite\Scripts\python.exe(선택)
+
+가상화에서 python manage.py startapp poll 입력
+파이참 test 작업 후
+python manage.py runserver
+
+MTV 패턴 -파이썬
+Model - 데이터베이스(테이블):ORM(객체관계매핑). sql 안쓰고 class 를 사용
+Template - html
+View - 제어함수(def)
+
+가상화에서 python manage.py migrate 입력
+python manage.py runserver 입력 후 크롬에서 127.0.0.1:8000/admin -> 관리자페이지
+가상화에서 python manage.py creatsuperuser -> 계정 생성
+python manage.py runserver 입력 후 크롬에서 127.0.0.1:8000/admin 다시 접속
+로그인 확인
+
+setting 에서 installed_app에서 'poll.apps.PollConfig' 입력
+models.py - Question클래스(엔티티)생성
+
+가상화에서 python manage.py makemigrations 입력
