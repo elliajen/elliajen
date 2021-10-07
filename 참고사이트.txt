@@ -1,0 +1,5 @@
+참고 사이트
+https://www.w3schools.com/default.asp
+https://blog.naver.com/ydaum/222243961002
+https://regexr.com/
+https://docs.djangoproject.com/en/3.2/
