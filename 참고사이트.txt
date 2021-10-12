@@ -6,3 +6,4 @@ https://docs.djangoproject.com/en/3.2/
 https://developer.mozilla.org/en-US/docs/Learn
 https://www.pythonanywhere.com/user/ellia/
 https://getbootstrap.com/
+https://flexboxfroggy.com/#ko
